@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Document</title>
+	</head>
+	<style>
+		body {
+			background: black;
+			font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+		}
+		* {
+			border: 1px dashed red;
+			min-height: 10px;
+		}
+		.postcard {
+			background: white;
+			width: 400px;
+			height: 300px;
+			margin: auto;
+		}
+		.postcard-header {
+			display: flex;
+		}
+		.postcard-header img {
+			width: 50px;
+			height: 50px;
+		}
+		.postcard-header h1 {
+			width: 450px;
+			margin: 1px;
+		}
+		.postcard-body {
+			display: flex;
+		}
+		.body-left p:first-child {
+			margin-top: 0%;
+			
+		}
+		.body-left,
+		.body-right {
+			padding: 5px;
+		}
+		input {
+			border: none;
+			border-bottom: 1px solid grey;
+			color: grey;
+		}
+		.postcard-footer {
+			text-align: center;
+		}
+		button {
+			background-color: darkgrey;
+			padding: 5px;
+		}
+	</style>
+	<body>
+		<!-- start adding new tags here -->
+		<div class="postcard">
+			<div class="postcard-header">
+				<h1>My Postcard</h1>
+				<img
+					src="https://raw.githubusercontent.com/breatheco-de/exercise-postcard/e63a7916530cc850bd92aa1c2e19191837fb5c80/.learn/assets/4geeks.png"
+				/>
+			</div>
+			<div class="postcard-body">
+				<div class="body-left">
+					<p>Look how awesome!This is a postcard that I created using HTML5 and CCS3 during my 4Geeks Academy Course!</p>
+					<p>This is so cool, can´t wait to start doing more stuff</p>
+				</div>
+				<div class="body-right">
+					<input type="Some Name" value="Some Name" /><br />
+					<input type="Some email" value="Some email" /><br />
+					<input type="Some comment" value="Some comment" /><br />
+				</div>
+			</div>
+			<div class="postcard-footer">
+				<button>Send My Postcard</button>
+			</div>
+		</div>
+	</body>
+</html>
